@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glucose Guardians - Event Clips</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #111827;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px solid #22c55e;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #22c55e;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .clips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .clip-card {
+            background: #1e293b;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .clip-card:hover {
+            transform: scale(1.03);
+        }
+
+        .clip-card iframe {
+            width: 100%;
+            height: 220px;
+            border: none;
+        }
+
+        .clip-info {
+            padding: 15px;
+        }
+
+        .clip-info h3 {
+            margin-top: 0;
+            color: #22c55e;
+        }
+
+        .clip-info p {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+            margin-top: 40px;
+            color: #94a3b8;
+        }
+
+        a {
+            color: #22c55e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Glucose Guardians</h1>
+        <p>Gaming Event Highlights & Community Clips</p>
+    </header>
+
+    <div class="container">
+
+        <div class="clips-grid">
+
+            <!-- Clip 1 -->
+            <div class="clip-card">
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="clip-info">
+                    <h3>Warzone Squad Wipe</h3>
+                    <p>One of the craziest plays from our Friday night event.</p>
+                </div>
+            </div>
+
+            <!-- Clip 2 -->
+            <div class="clip-card">
+                <iframe 
+                    src="https://www.youtube.com/embed/ysz5S6PUM-U"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="clip-info">
+                    <h3>ARK Base Defense</h3>
+                    <p>Defending the tribe during our community raid night.</p>
+                </div>
+            </div>
+
+            <!-- Clip 3 -->
+            <div class="clip-card">
+                <iframe 
+                    src="https://player.twitch.tv/?channel=twitch&parent=yourwebsite.com"
+                    allowfullscreen>
+                </iframe>
+
+                <div class="clip-info">
+                    <h3>Live Event Stream</h3>
+                    <p>Watch our latest Twitch gaming sessions and tournaments.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>
+            Powered by 
+            <a href="http://glucoseguardians.cc/" target="_blank">
+                Glucose Guardians
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
